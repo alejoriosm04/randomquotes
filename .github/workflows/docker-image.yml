@@ -9,7 +9,6 @@ on:
 jobs:
 
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -21,7 +20,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASS
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag alejoriosm04/express-randomquotes:latest
-      
+      run: docker build . --file Dockerfile --tag alejoriosm04/express-randomquotes:latest  # Aquí asegúrate de usar 'latest' como tag
+
     - name: Docker Push
-      run: docker push alejoriosm04/express-randomquotes
+      run: docker push alejoriosm04/express-randomquotes:latest  # Aquí también asegúrate de usar 'latest'
