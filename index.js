@@ -4,12 +4,7 @@ const app = express()
 const port = 80
 
 const phrases = [
-  "Inspire your future",
-  "The future is now",
-  "The future is bright",
-  "The future is here",
-  "The future is ours",
-  "The future is in your hands",
+  "Hello World",
 ]
 
 app.get('/', (req, res) => {
