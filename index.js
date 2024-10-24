@@ -4,7 +4,7 @@ const app = express()
 const port = 80
 
 const phrases = [
-  "Hello World",
+  "Hey, this is a phrase!",
 ]
 
 app.get('/', (req, res) => {
